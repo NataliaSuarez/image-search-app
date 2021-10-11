@@ -1,0 +1,27 @@
+html {
+  /* para que los elementos de html se midan distintos */
+  box-sizing: content-box;
+}
+
+html * {
+  /* el * es para indicar que todos los elementos hijos de <html> tomen el sig estilo*/
+  box-sizing: inherit; /* heredan el box-sizing del padre, que es content-box */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 22px;
+  box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.3);
+  z-index: 2;
+  position: relative;
+}
+
+header input {
+  outline: none;
+  border: solid 1px #eee;
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: inherit;
+}
